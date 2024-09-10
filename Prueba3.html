@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Formulario con Estilos</title>
+    <style>
+        /* Estilos para el formulario */
+        form {
+            width: 500px;
+            margin: 0 auto;
+            padding: 40px;
+            border: 1px solid #ccc;
+            border-radius: 9px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input[type="text"],   
+
+        select,
+        textarea {
+            width: 100%;
+            padding: 20px;
+            margin-bottom: 30px;
+            border: 1px solid #ccc;
+            border-radius:   
+ 3px;
+        }
+
+        button[type="submit"] {
+            background-color: #cf1e91;
+            color: white;
+            padding: 20px 30px;
+            border: none;
+            border-radius: 3px;   
+
+            cursor: pointer;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #cf1e91;
+        }
+    </style>
+</head>
+<body>
+    <form>   
+
+        <label for="comida">Comida favorita:</label>
+        <input type="text" id="comida" name="comida" required>
+
+        <label for="restaurante">Restaurante a elegir:</label>
+        <select id="restaurante" name="restaurante">
+		    <option value=""></option> 
+            <option value="KFC">KFC</option>
+            <option value="WINSTOP">WINSTOP</option>
+            <option value="CHILLIS">CHILLIS</option>
+			<option value="CARL´S JR">CARL´S JR</option>
+			<option value="DOMINOS PIZZA">DOMINOS PIZZA</option>
+			<option value="ITALIANIS">ITALIANIS</option>
+        </select>
+
+        <label>Postre:</label>
+        <input type="radio" name="postre" value="Helado"> Helado
+        <input type="radio" name="postre" value="Crepa"> Crepa   
+		<input type="radio" name="postre" value="Cheseekeeq"> Cheseekeeq   
+
+        <input type="radio" name="postre" value="otro">   
+ Otro
+
+        <label for="mensaje">Tu opinion de la comida:</label>
+        <textarea id="mensaje" name="mensaje" rows="10"></textarea>
+
+        <button type="submit">Sube tu opinion</button>
+    </form>
+</body>
